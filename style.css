@@ -1,0 +1,387 @@
+/* Core Palette Configurations */
+:root {
+    --bg-deep-dark: #0f0f0f;
+    --bg-card-dark: #161616;
+    --text-primary-gold: #e2b767;
+    --text-soft-white: #f5f5f5;
+    --text-muted-gray: #9c9c9c;
+    --gradient-gold: linear-gradient(135deg, #f1cb81 0%, #b88e3d 100%);
+}
+
+/* Global Elements styling */
+body {
+    background-color: var(--bg-deep-dark);
+    color: var(--text-soft-white);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.bg-card-dark {
+    background-color: var(--bg-card-dark);
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-gold {
+    color: var(--text-primary-gold);
+}
+
+.text-secondary-custom {
+    color: var(--text-muted-gray);
+    font-size: 0.95rem;
+}
+
+.py-5-custom {
+    padding: 90px 0;
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+/* Custom Dividers */
+.custom-line {
+    width: 70px;
+    height: 2px;
+    background: var(--gradient-gold);
+    margin-top: 15px;
+}
+
+.section-title {
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Navbar Custom Changes */
+.navbar {
+    background-color: rgba(15, 15, 15, 0.95);
+    border-bottom: 1px solid rgba(226, 183, 103, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--text-soft-white) !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--text-muted-gray) !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--text-primary-gold) !important;
+}
+
+/* Elegant Buttons Layout with Gradient Gradients */
+.btn-gradient {
+    background: var(--gradient-gold);
+    color: #000 !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 28px;
+    font-size: 0.9rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(226, 183, 103, 0.3);
+}
+
+.btn-outline-gold {
+    background: transparent;
+    color: var(--text-primary-gold);
+    border: 1px solid var(--text-primary-gold);
+    border-radius: 4px;
+    padding: 12px 28px;
+    font-size: 0.9rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-outline-gold:hover {
+    background: var(--gradient-gold);
+    color: #000;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 85vh;
+    background: linear-gradient(rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 1)), 
+                url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1920') no-repeat center center/cover;
+}
+
+/* Image Wrappers and Scaling */
+.about-img-wrapper {
+    position: relative;
+    padding: 10px;
+    border: 1px solid rgba(226, 183, 103, 0.2);
+    border-radius: 8px;
+}
+
+/* Service Component Card Layout */
+.service-card {
+    background-color: var(--bg-deep-dark);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--text-primary-gold);
+}
+
+.service-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 6px;
+    aspect-ratio: 4/3;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Testimonial Section Setup */
+.testimonial-card {
+    background-color: var(--bg-deep-dark);
+    border-radius: 8px;
+    border-left: 3px solid var(--text-primary-gold);
+}
+/* Section Base Theme */
+.testimonial-section {
+  background-color: #0f0f11;
+  color: #ffffff;
+  padding: 60px 0;
+  font-family: sans-serif;
+}
+
+/* Heading & Line */
+.section-title {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title-line {
+  width: 80px;
+  height: 2px;
+  background-color: #d4af37;
+  margin: 0 auto 40px auto;
+}
+
+/* Single Testimonial Card (Bada Size Kiya Hua) */
+.testimonial-card {
+  background-color: #141416;
+  border-radius: 8px;
+  padding: 45px 50px; /* Andar ki padding badha di hai */
+  border-left: 2px solid #d4af37;
+  border-top: 2px solid #d4af37;
+  width: 100%;
+  max-width: 850px; /* Isse card ka size bada ho gaya hai */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Quote Graphic */
+.quote-icon {
+  color: #d4af37;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+}
+
+/* Content Text */
+.testimonial-text {
+  color: #a0a0a5;
+  font-size: 1.2rem; /* Font size bada kiya taaki bade box me accha lage */
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+/* User Profile Setup */
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.profile-avatar {
+  width: 60px; /* Photo ka size thoda bada kiya */
+  height: 60px;
+  object-fit: cover;
+  margin-right: 18px;
+  background-color: #333336; 
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 1.25rem; /* Name bada kiya */
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+
+.profile-role {
+  color: #d4af37;
+  font-size: 0.95rem;
+}
+
+/* Arrow Buttons Positioning */
+.custom-slider-btn {
+  width: 5%;
+}
+.client-avatar {
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    border-radius: 50%;
+    background-image: url('C:\AuraSalon\image\neha1.jpeg');
+    background-size: cover;
+}
+
+/* Team Section Circle Avatars */
+.team-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--text-primary-gold);
+}
+
+.view-portfolio {
+    color: var(--text-muted-gray);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.view-portfolio:hover {
+    color: var(--text-primary-gold);
+}
+
+/* Special Offers Blocks Layout */
+.offer-card {
+    background-color: var(--bg-deep-dark);
+    border: 1px solid rgba(226, 183, 103, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.offer-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-primary-gold);
+    font-weight: 500;
+}
+
+.highlighted-card {
+    background: var(--gradient-gold);
+    border: none;
+    transform: scale(1.03);
+}
+
+.badge-pop {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Form Container Style */
+.form-container {
+    background-color: var(--bg-card-dark);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Input Styling for Dark Theme Visibility */
+.custom-input {
+    background-color: #1e1e1e !important;
+    border: 1px solid #444444 !important; /* Borders thode light kiye taaki box ki boundary dikhe */
+    color: #ffffff !important;            /* Type karne par text white dikhega */
+    border-radius: 6px !important;
+    padding: 12px 15px !important;
+}
+
+/* Google Chrome, Safari, Opera aur Edge ke liye Placeholder color fix */
+.custom-input::placeholder {
+    color: #b3b3b3 !important;            /* Placeholder text ab light gray dikhega jo clear hoga */
+    opacity: 1 !important;                 
+}
+
+/* Firefox ke liye Placeholder color fix */
+.custom-input::-moz-placeholder {
+    color: #b3b3b3 !important;
+    opacity: 1 !important;
+}
+
+/* Internet Explorer ke liye */
+.custom-input:-ms-input-placeholder {
+    color: #b3b3b3 !important;
+}
+
+/* Date aur Time icon ka color white/gold karne ke liye */
+.custom-input::-webkit-calendar-picker-indicator {
+    filter: invert(1) sepia(50%) saturate(500%) hue-rotate(10deg); /* Isse calendar aur clock icons gold/white tint mein clear dikhenge */
+    cursor: pointer;
+}
+
+/* Jab user box par click karega (Focus) */
+.custom-input:focus {
+    background-color: #252525 !important;
+    border-color: var(--text-primary-gold) !important; /* Border gold ho jayegi click karte hi */
+    box-shadow: 0 0 8px rgba(226, 183, 103, 0.2) !important;
+    color: #ffffff !important;
+}
+
+/* Dropdown (Select) options ka background black rakhne ke liye */
+.custom-input option {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Footer Section Links */
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-muted-gray);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .text-gold-hover:hover {
+    color: var(--text-primary-gold) !important;
+}
